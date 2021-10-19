@@ -1,0 +1,85 @@
+.app{
+    width: 100%;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+.main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  input {
+    border: 3px solid lightgray;
+    height: 40px;
+    width: 250px;
+    padding: 0px 10px;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+
+  button {
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+  }
+  .card-img {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  @media screen and (max-width: 599px){
+    .app{
+        padding: 0 15px;
+
+    }
+    input{
+        width: 210px;
+        height: 40px;
+    }
+    button{
+        height: 40px;
+        font-size: 16px;
+
+    }
+    .container{
+        display: block;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+  }
